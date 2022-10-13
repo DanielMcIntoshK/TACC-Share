@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J Mn_Product_DFT_LIT_SOLV
+#SBATCH -o output.%j
+#SBATCH -e error.%j
+#SBATCH -N 1 -n 1
+#SBATCH -p normal
+#SBATCH -t 32:00:00
+
+module load gaussian
+
+g16 < ProdOptNoFree.config > output.log

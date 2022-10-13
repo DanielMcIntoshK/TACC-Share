@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J Mn_Reactant_DFT_NO_ION
+#SBATCH -o output.%j
+#SBATCH -e error.%j
+#SBATCH -N 1 -n 1
+#SBATCH -p normal
+#SBATCH -t 36:00:00
+
+module load gaussian
+
+g16 < MnBenzoComp.config > output.log
