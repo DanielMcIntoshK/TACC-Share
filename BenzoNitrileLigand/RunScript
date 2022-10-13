@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J BenzoNitrile_DFT_OPT
+#SBATCH -o output.%j
+#SBATCH -e error.%j
+#SBATCH -N 1 -n 1
+#SBATCH -p normal
+#SBATCH -t 00:12:00
+
+module load gaussian
+
+g16 < BenzoNitrile.config > output.log
