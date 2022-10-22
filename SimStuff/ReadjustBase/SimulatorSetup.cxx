@@ -81,7 +81,6 @@ void SimulatorSetup::createSimulations(){
 		outFile.open(folderBase.substr(0,folderCutOff)+"/"+simName+"/"+simName+".config");
 		fs::create_directory(folderBase.substr(0,folderCutOff)+"/"+simName);
 
-		outFile << "HELLO WORLD! " << i << std::endl;
 		outFile << "%Chk=checkpoint.chk" << std::endl <<
 			"%NProcShared=12" << std::endl << 
 			"# wB97XD Gen Opt=(QST2) SCRF=(Solvent=TetraHydroFuran)" << std::endl << 

@@ -45,7 +45,7 @@ void Molecule::loadMolecule(std::string fileName){
 	inFile.close();
 }
 
-void Molecule::output(std::ostream out){
+void Molecule::output(std::ostream & out){
 	for(int a = 0; a < atomCount; a++){
 		std::string atomLine=atoms[a];
 		atomLine.resize(10,' ');

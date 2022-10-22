@@ -2,8 +2,6 @@
 #include <fstream>
 #include <iostream>
 #include <cmath>
-#include <glm/mat4x4.hpp>
-#include <glm/ext/matrix_transform.hpp>
 
 Molecule::Molecule():atomCount{0}{}
 

@@ -27,15 +27,12 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 	double Pi = 3.14159265358979;
 	
 	int spacePos = firstLine.find_first_of(' ');
-	std::cout << firstLine << " " << firstLine.substr(0,spacePos) << std::endl;
 	simCount=std::stoi(firstLine.substr(0,spacePos));
 	firstLine=firstLine.substr(spacePos+1);
 	spacePos=firstLine.find_first_of(' ');
-	std::cout << firstLine << " " << firstLine.substr(0,spacePos)<< std::endl;
 	std::string ReactName=firstLine.substr(0,spacePos);
 	firstLine=firstLine.substr(spacePos+1);
 	std::string ProdName=firstLine;
-	std::cout << ProdName << std::endl;
 
 	molecules.resize(simCount);
 
@@ -72,10 +69,8 @@ void SimulatorSetup::createSimulations(){
 
 	for(int i =0; i < simCount; i++){
 		std::string simName=folderBase.substr(folderCutOff+1);
-		std::cout << simName << "\n";
 		int hashPos=simName.find("#");
 		simName=simName.substr(0,hashPos)+std::to_string(i)+simName.substr(hashPos+1);
-		std::cout << simName << " " << hashPos <<"\n";
 		std::ofstream outFile;
 		
 		if(fs::exists(folderBase.substr(0,folderCutOff)+"/"+simName)){
