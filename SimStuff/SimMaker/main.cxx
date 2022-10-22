@@ -53,7 +53,7 @@ int main(){
 		outFile << "1 1 1 ";
 		outFile << 3+2*x;
 		outFile << " -1 -1 3 ";
-		outFile << 4+2*x;
+		outFile << 6+2*x;
 		outFile << " .333333 .25";
 		outFile << std::endl;
 	}

@@ -27,22 +27,22 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 	double Pi = 3.14159265358979;
 	
 	int spacePos = firstLine.find_first_of(' ');
-	std::cout << firstLine << " " << firstLine.substr(0,spacePos) << std::endl;
 	simCount=std::stoi(firstLine.substr(0,spacePos));
 	firstLine=firstLine.substr(spacePos+1);
 	spacePos=firstLine.find_first_of(' ');
-	std::cout << firstLine << " " << firstLine.substr(0,spacePos)<< std::endl;
 	std::string ReactName=firstLine.substr(0,spacePos);
 	firstLine=firstLine.substr(spacePos+1);
 	std::string ProdName=firstLine;
-	std::cout << ProdName << std::endl;
 
 	molecules.resize(simCount);
 
 	for(int i = 0; i < simCount; i++){
 		molecules[i][0].loadMolecule(ReactName);
+		molecules[i][0].adjust(0,-2,3);
+
 		molecules[i][1].loadMolecule(ProdName);
-		
+		molecules[i][1].adjust(0,-2,3);
+
 		std::string inputLine;
 		std::getline(inFile, inputLine);
 		
@@ -57,7 +57,7 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 		}
 
 		molecules[i][0].addAtom("Br", {values[0],values[1],values[2]}, values[3],4);
-		molecules[i][1].addStructure("benzo.xyz", {values[4],values[5],values[6]},values[7],Pi*values[8],Pi*values[9],molecules[i][1].getCount());
+		molecules[i][1].addStructure("benzo.xyz", {values[4],values[5],values[6]},values[7],Pi*values[8],Pi*values[9]+Pi/2,molecules[i][1].getCount());
 	}
 	return 0;
 }
@@ -69,10 +69,8 @@ void SimulatorSetup::createSimulations(){
 
 	for(int i =0; i < simCount; i++){
 		std::string simName=folderBase.substr(folderCutOff+1);
-		std::cout << simName << "\n";
 		int hashPos=simName.find("#");
 		simName=simName.substr(0,hashPos)+std::to_string(i)+simName.substr(hashPos+1);
-		std::cout << simName << " " << hashPos <<"\n";
 		std::ofstream outFile;
 		
 		if(fs::exists(folderBase.substr(0,folderCutOff)+"/"+simName)){

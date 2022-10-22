@@ -15,8 +15,10 @@ int main(int argc, char** argv){
 	//mol.outputxyz("../test.xyz");
 	
 	SimulatorSetup ss;
-	ss.loadMolecules("../SimTest.dsmt");
-	ss.createSimulations("../testFold/sim#");
+	if(ss.loadMolecules(std::string(argv[argc-1]))!=0){
+		return 0;
+	}
+	ss.createSimulations();
 
 	return 0;
 }
