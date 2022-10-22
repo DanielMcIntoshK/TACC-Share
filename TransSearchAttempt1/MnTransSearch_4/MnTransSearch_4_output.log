@@ -1,0 +1,399 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /home1/apps/gaussian/16rA.03/g16/l1.exe "/tmp/Gau-3254.inp" -scrdir="/tmp/"
+ Entering Link 1 = /home1/apps/gaussian/16rA.03/g16/l1.exe PID=      3255.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                22-Oct-2022 
+ ******************************************
+ %Chk=checkpoint.chk
+ %NProcShared=12
+ Will use up to   12 processors via shared memory.
+ ------------------------------------------------------
+ # wB97XD Gen Opt=(QST2) SCRF=(Solvent=TetraHydroFuran)
+ ------------------------------------------------------
+ 1/5=1,18=20,26=3,27=202,38=1/1,3;
+ 2/9=110,12=2,17=6,18=5,40=1/2;
+ 3/5=7,11=2,25=1,30=1,70=2201,71=1,72=20,74=-58/1,2,3;
+ 4//1;
+ 5/5=2,38=5,53=20/2;
+ 6/7=2,8=2,9=2,10=2,28=1/1;
+ 7//1,2,3,16;
+ 1/5=1,18=20,26=3,27=202/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/5=7,6=1,11=2,25=1,30=1,70=2205,71=1,72=20,74=-58,82=7/1,2,3;
+ 4/5=5,16=3,69=1/1;
+ 5/5=2,38=5,53=20/2;
+ 7//1,2,3,16;
+ 1/5=1,18=20,26=3,27=202/3(-5);
+ 2/9=110/2;
+ 6/7=2,8=2,9=2,10=2,19=2,28=1/1;
+ 99/9=1/99;
+ ----------------------------
+ Mn Transition State Reactant
+ ----------------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ Mn                    0.        0.        0. 
+ C                    -0.09679   1.8323    0.02295 
+ C                     0.        0.       -1.82342 
+ C                     1.83282   0.       -0.02938 
+ Br                    1.73205   1.73205   1.73205 
+ N                    -0.04922  -2.15482   0.09332 
+ N                    -2.15153  -0.14036   0.09515 
+ C                     0.52385  -2.93988  -0.8355 
+ C                     0.57609  -4.32182  -0.71618 
+ C                     0.03787  -4.93262   0.41495 
+ C                    -0.56724  -4.13205   1.38331 
+ C                    -0.59422  -2.75751   1.15179 
+ C                    -2.76019  -0.33999   1.26803 
+ C                    -4.08404  -0.75052   1.40528 
+ C                    -2.90821  -0.24504  -1.01025 
+ C                    -4.25761  -0.57119  -0.97276 
+ C                    -4.8572   -0.85573   0.2508 
+ C                    -4.54612  -1.14763   2.76568 
+ C                    -1.06072  -4.64508   2.69242 
+ C                    -2.36035  -4.39435   3.17469 
+ C                    -4.2951   -2.45577   3.22064 
+ C                    -2.7088   -4.77698   4.4776 
+ C                    -4.6235   -2.81682   4.53378 
+ C                    -5.16246  -0.23395   3.6234 
+ C                    -0.16193  -5.33835   3.51187 
+ C                    -0.5204   -5.73496   4.79711 
+ C                    -5.49479  -0.60032   4.92642 
+ C                    -5.20842  -1.88092   5.39075 
+ C                    -1.78362  -5.43139   5.29359 
+ S                    -3.59561  -3.66717   2.11779 
+ S                    -4.34059  -4.47249   5.11215 
+ H                     1.05087  -4.91025  -1.50139 
+ H                     0.08951  -6.01597   0.54182 
+ H                    -1.07315  -2.12266   1.89001 
+ H                    -2.16282  -0.19695   2.1652 
+ H                    -2.4226   -0.06909  -1.96947 
+ H                    -4.81913  -0.6322   -1.90505 
+ H                    -5.90099  -1.1706    0.30616 
+ H                    -5.36522   0.7782    3.26819 
+ H                     0.84657  -5.53732   3.14359 
+ H                     0.19986  -6.26023   5.42631 
+ H                    -5.96589   0.12432   5.59251 
+ H                    -5.4428   -2.16193   6.41931 
+ H                    -2.05931  -5.70427   6.31399 
+ O                     0.06255   0.01915  -2.96537 
+ O                     2.97377  -0.00521  -0.04518 
+ O                    -0.17883   2.9698    0.0391 
+ H                     0.9665   -2.44597  -1.70172 
+ N                     0.1205   -0.06435   2.03055 
+ C                     0.1757   -0.32041   3.1556 
+ C                     0.0988   -0.78664   4.50696 
+ C                     1.18058  -0.65782   5.389 
+ C                    -1.08395  -1.43608   4.90265 
+ C                     1.07101  -1.1882    6.67028 
+ H                     2.09302  -0.15307   5.06933 
+ C                    -1.1749   -1.96428   6.18414 
+ H                    -1.92637  -1.52866   4.21411 
+ C                    -0.09853  -1.84109   7.06447 
+ H                     1.90634  -1.09472   7.36578 
+ H                    -2.08869  -2.47607   6.49182 
+ H                    -0.17211  -2.25847   8.07044 
+ 
+ Add virtual bond connecting atoms C2         and Br5        Dist= 4.73D+00.
+ Add virtual bond connecting atoms C4         and Br5        Dist= 4.67D+00.
+ Add virtual bond connecting atoms N49        and Br5        Dist= 4.60D+00.
+ ---------------------------
+ Mn Transition State Product
+ ---------------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ Mn                    0.        0.        0. 
+ C                    -0.08831   1.81915   0.02694 
+ C                     0.        0.       -1.79318 
+ C                     1.82129   0.        0.02701 
+ Br                    0.21406   0.22525   2.60296 
+ N                    -0.00198  -2.15626   0.10267 
+ N                    -2.15359  -0.10666   0.10261 
+ C                     0.38734  -2.90055  -0.94769 
+ C                     0.33894  -4.28645  -0.94857 
+ C                    -0.15783  -4.94905   0.17197 
+ C                    -0.57167  -4.19114   1.26468 
+ C                    -0.44573  -2.80197   1.18369 
+ C                    -2.77703  -0.58203   1.18326 
+ C                    -4.15855  -0.77451   1.26439 
+ C                    -2.91591   0.24739  -0.9473 
+ C                    -4.29788   0.13244  -0.94805 
+ C                    -4.93564  -0.39652   0.17216 
+ C                    -4.73565  -1.36773   2.50277 
+ C                    -1.13591  -4.79615   2.50328 
+ C                    -2.48294  -4.59586   2.85783 
+ C                    -4.47     -2.70335   2.85753 
+ C                    -2.9782   -5.11928   4.05963 
+ C                    -4.96894  -3.2234    4.05928 
+ C                    -5.54655  -0.59398   3.33896 
+ C                    -0.32361  -5.56806   3.33979 
+ C                    -0.82204  -6.0942    4.52932 
+ C                    -6.04809  -1.11734   4.52841 
+ C                    -5.74193  -2.42245   4.90321 
+ C                    -2.14059  -5.85203   4.90386 
+ S                    -3.58496  -3.76369   1.73597 
+ S                    -4.6875   -4.9209    4.50034 
+ H                     0.67663  -4.83606  -1.82736 
+ H                    -0.23113  -6.03846   0.19274 
+ H                    -0.69729  -2.18819   2.04804 
+ H                    -2.15175  -0.80469   2.04727 
+ H                    -2.4021    0.64317  -1.82367 
+ H                    -4.86325   0.44411  -1.82647 
+ H                    -6.02029  -0.52198   0.19305 
+ H                    -5.76345   0.43908   3.05961 
+ H                     0.71885  -5.73439   3.0606 
+ H                    -0.17222  -6.6814    5.18043 
+ H                    -6.66649  -0.49688   5.17925 
+ H                    -6.10842  -2.82852   5.84804 
+ H                    -2.52842  -6.23768   5.84873 
+ O                     0.04791   0.05036  -2.9414 
+ O                     2.96474  -0.00968   0.05082 
+ O                    -0.15349   2.9608    0.05043 
+ H                     0.75715  -2.36822  -1.82434 
+ N                    -1.20605  -1.20605   3.61814 
+ C                    -1.04632  -1.04632   4.75373 
+ C                    -0.84734  -0.84813   6.1653 
+ C                     0.10942  -1.6132    6.84843 
+ C                    -1.61236   0.109     6.84853 
+ C                     0.29628  -1.41626   8.21337 
+ H                     0.69969  -2.35539   6.30868 
+ C                    -1.4155    0.29579   8.21329 
+ H                    -2.35428   0.69923   6.30838 
+ C                    -0.46375  -0.46448   8.89453 
+ H                     1.03991  -2.00969   8.74818 
+ H                    -2.00874   1.03946   8.74826 
+ H                    -0.31325  -0.31402   9.96548 
+ 
+ Add virtual bond connecting atoms N49        and H34        Dist= 3.63D+00.
+ Add virtual bond connecting atoms N49        and H35        Dist= 3.55D+00.
+ Iteration  1 RMS(Cart)=  0.18050255 RMS(Int)=  0.69887863
+ Iteration  2 RMS(Cart)=  0.12198204 RMS(Int)=  0.69068521
+ Iteration  3 RMS(Cart)=  0.11892960 RMS(Int)=  0.68886714
+ Iteration  4 RMS(Cart)=  0.08400483 RMS(Int)=  0.68939414
+ Iteration  5 RMS(Cart)=  0.05749918 RMS(Int)=  0.68943598
+ Iteration  6 RMS(Cart)=  0.05558133 RMS(Int)=  0.68300203
+ Iteration  7 RMS(Cart)=  0.02560693 RMS(Int)=  0.67847229
+ Iteration  8 RMS(Cart)=  0.01429907 RMS(Int)=  0.67428038
+ Iteration  9 RMS(Cart)=  0.03994919 RMS(Int)=  0.66838446
+ Iteration 10 RMS(Cart)=  0.01657209 RMS(Int)=  0.66451345
+ Iteration 11 RMS(Cart)=  0.01086583 RMS(Int)=  0.66150022
+ Iteration 12 RMS(Cart)=  0.00910270 RMS(Int)=  0.65900327
+ Iteration 13 RMS(Cart)=  0.00806584 RMS(Int)=  0.65688192
+ Iteration 14 RMS(Cart)=  0.00715489 RMS(Int)=  0.65506998
+ Iteration 15 RMS(Cart)=  0.00630855 RMS(Int)=  0.65351505
+ Iteration 16 RMS(Cart)=  0.00558204 RMS(Int)=  0.65218502
+ Iteration 17 RMS(Cart)=  0.00492636 RMS(Int)=  0.65105160
+ Iteration 18 RMS(Cart)=  0.00455601 RMS(Int)=  0.65005547
+ Iteration 19 RMS(Cart)=  0.00419328 RMS(Int)=  0.64917096
+ Iteration 20 RMS(Cart)=  0.00388178 RMS(Int)=  0.64837776
+ Iteration 21 RMS(Cart)=  0.00372308 RMS(Int)=  0.64764620
+ Iteration 22 RMS(Cart)=  0.00360985 RMS(Int)=  0.64696527
+ Iteration 23 RMS(Cart)=  0.00352275 RMS(Int)=  0.64632788
+ Iteration 24 RMS(Cart)=  0.00344915 RMS(Int)=  0.64572916
+ Iteration 25 RMS(Cart)=  0.00338329 RMS(Int)=  0.64516538
+ Iteration 26 RMS(Cart)=  0.00332248 RMS(Int)=  0.64463348
+ Iteration 27 RMS(Cart)=  0.00326535 RMS(Int)=  0.64413086
+ Iteration 28 RMS(Cart)=  0.00321114 RMS(Int)=  0.64365526
+ Iteration 29 RMS(Cart)=  0.00315942 RMS(Int)=  0.64320467
+ Iteration 30 RMS(Cart)=  0.00310990 RMS(Int)=  0.64277732
+ Iteration 31 RMS(Cart)=  0.00306217 RMS(Int)=  0.64237164
+ Iteration 32 RMS(Cart)=  0.00301627 RMS(Int)=  0.64198618
+ Iteration 33 RMS(Cart)=  0.00297213 RMS(Int)=  0.64161964
+ Iteration 34 RMS(Cart)=  0.00292962 RMS(Int)=  0.64127084
+ Iteration 35 RMS(Cart)=  0.00288865 RMS(Int)=  0.64093869
+ Iteration 36 RMS(Cart)=  0.00284914 RMS(Int)=  0.64062223
+ Iteration 37 RMS(Cart)=  0.00281102 RMS(Int)=  0.64032056
+ Iteration 38 RMS(Cart)=  0.00277446 RMS(Int)=  0.64003192
+ Iteration 39 RMS(Cart)=  0.00273910 RMS(Int)=  0.63975529
+ Iteration 40 RMS(Cart)=  0.00270502 RMS(Int)=  0.63948997
+ Iteration 41 RMS(Cart)=  0.00267206 RMS(Int)=  0.63923541
+ Iteration 42 RMS(Cart)=  0.00264018 RMS(Int)=  0.63899115
+ Iteration 43 RMS(Cart)=  0.00260931 RMS(Int)=  0.63875680
+ Iteration 44 RMS(Cart)=  0.00257941 RMS(Int)=  0.63853195
+ Iteration 45 RMS(Cart)=  0.00255046 RMS(Int)=  0.63831627
+ Iteration 46 RMS(Cart)=  0.00252241 RMS(Int)=  0.63810942
+ Iteration 47 RMS(Cart)=  0.00249523 RMS(Int)=  0.63791109
+ Iteration 48 RMS(Cart)=  0.00246888 RMS(Int)=  0.63772099
+ Iteration 49 RMS(Cart)=  0.00244335 RMS(Int)=  0.63753884
+ Iteration 50 RMS(Cart)=  0.00241859 RMS(Int)=  0.63736438
+ Iteration 51 RMS(Cart)=  0.00239458 RMS(Int)=  0.63719737
+ Iteration 52 RMS(Cart)=  0.00237129 RMS(Int)=  0.63703758
+ Iteration 53 RMS(Cart)=  0.00234870 RMS(Int)=  0.63688477
+ Iteration 54 RMS(Cart)=  0.00232677 RMS(Int)=  0.63673876
+ Iteration 55 RMS(Cart)=  0.00230548 RMS(Int)=  0.63659932
+ Iteration 56 RMS(Cart)=  0.00228482 RMS(Int)=  0.63646629
+ Iteration 57 RMS(Cart)=  0.00226474 RMS(Int)=  0.63633946
+ Iteration 58 RMS(Cart)=  0.00224524 RMS(Int)=  0.63621869
+ Iteration 59 RMS(Cart)=  0.00222630 RMS(Int)=  0.63610380
+ Iteration 60 RMS(Cart)=  0.00220788 RMS(Int)=  0.63599463
+ Iteration 61 RMS(Cart)=  0.00218998 RMS(Int)=  0.63589104
+ Iteration 62 RMS(Cart)=  0.00217258 RMS(Int)=  0.63579290
+ Iteration 63 RMS(Cart)=  0.00215565 RMS(Int)=  0.63570005
+ Iteration 64 RMS(Cart)=  0.00213918 RMS(Int)=  0.63561239
+ Iteration 65 RMS(Cart)=  0.00212316 RMS(Int)=  0.63552977
+ Iteration 66 RMS(Cart)=  0.00210756 RMS(Int)=  0.63545210
+ Iteration 67 RMS(Cart)=  0.00209238 RMS(Int)=  0.63537924
+ Iteration 68 RMS(Cart)=  0.00207760 RMS(Int)=  0.63531111
+ Iteration 69 RMS(Cart)=  0.00206320 RMS(Int)=  0.63524759
+ Iteration 70 RMS(Cart)=  0.00204918 RMS(Int)=  0.63518858
+ Iteration 71 RMS(Cart)=  0.00203551 RMS(Int)=  0.63513400
+ Iteration 72 RMS(Cart)=  0.00202219 RMS(Int)=  0.63508374
+ Iteration 73 RMS(Cart)=  0.00200921 RMS(Int)=  0.63503774
+ Iteration 74 RMS(Cart)=  0.00199655 RMS(Int)=  0.63499589
+ Iteration 75 RMS(Cart)=  0.00198420 RMS(Int)=  0.63495813
+ Iteration 76 RMS(Cart)=  0.00197215 RMS(Int)=  0.63492438
+ Iteration 77 RMS(Cart)=  0.00196039 RMS(Int)=  0.63489456
+ Iteration 78 RMS(Cart)=  0.00194890 RMS(Int)=  0.63486861
+ Iteration 79 RMS(Cart)=  0.00193769 RMS(Int)=  0.63484645
+ Iteration 80 RMS(Cart)=  0.00192674 RMS(Int)=  0.63482802
+ Iteration 81 RMS(Cart)=  0.00191603 RMS(Int)=  0.63481327
+ Iteration 82 RMS(Cart)=  0.00190557 RMS(Int)=  0.63480213
+ Iteration 83 RMS(Cart)=  0.00189533 RMS(Int)=  0.63479454
+ Iteration 84 RMS(Cart)=  0.00188532 RMS(Int)=  0.63479045
+ Iteration 85 RMS(Cart)=  0.00187552 RMS(Int)=  0.63478980
+ Iteration 86 RMS(Cart)=  0.00186591 RMS(Int)=  0.63479255
+ Iteration 87 RMS(Cart)=  0.00185650 RMS(Int)=  0.63479865
+ Iteration 88 RMS(Cart)=  0.00184727 RMS(Int)=  0.63480805
+ Iteration 89 RMS(Cart)=  0.00183822 RMS(Int)=  0.63482070
+ Iteration 90 RMS(Cart)=  0.00182933 RMS(Int)=  0.63483656
+ Iteration 91 RMS(Cart)=  0.00182059 RMS(Int)=  0.63485560
+ Iteration 92 RMS(Cart)=  0.00181200 RMS(Int)=  0.63487777
+ Iteration 93 RMS(Cart)=  0.00180354 RMS(Int)=  0.63490303
+ Iteration 94 RMS(Cart)=  0.00179520 RMS(Int)=  0.63493134
+ Iteration 95 RMS(Cart)=  0.00178698 RMS(Int)=  0.63496268
+ Iteration 96 RMS(Cart)=  0.00177886 RMS(Int)=  0.63499700
+ Iteration 97 RMS(Cart)=  0.00177084 RMS(Int)=  0.63503428
+ Iteration 98 RMS(Cart)=  0.00176289 RMS(Int)=  0.63507448
+ Iteration 99 RMS(Cart)=  0.00175502 RMS(Int)=  0.63511757
+ Iteration100 RMS(Cart)=  0.00174720 RMS(Int)=  0.63516352
+ New curvilinear step not converged.
+ FormGI is forming the generalized inverse of G from B-inverse, IUseBI=4.
+ RedQX1 iteration     1 Try  1 RMS(Cart)=  0.44114306 RMS(Int)=  0.67672779 XScale=  8.65422907
+ RedQX1 iteration     1 Try  2 RMS(Cart)=  0.44519385 RMS(Int)=  0.64696962 XScale=  4.23925110
+ RedQX1 iteration     1 Try  3 RMS(Cart)=  0.47438438 RMS(Int)=  0.63548800 XScale=  2.71206962
+ RedQX1 iteration     1 Try  4 RMS(Cart)=  0.59123510 RMS(Int)=  0.64201189 XScale=  1.95358511
+ RedQX1 iteration     1 Try  5 RMS(Cart)=  0.97960040 RMS(Int)=  0.68341804 XScale=  1.37046181
+ RedQX1 iteration     1 Try  6 RMS(Cart)=  0.81119746 RMS(Int)=  0.71221084 XScale=  1.15158713
+ RedQX1 iteration     2 Try  1 RMS(Cart)=  0.16214769 RMS(Int)=  0.71390386 XScale=  1.12773432
+ RedQX1 iteration     2 Try  2 RMS(Cart)=  0.20588210 RMS(Int)=  0.72226449 XScale=  1.08927184
+ RedQX1 iteration     2 Try  3 RMS(Cart)=  0.28927271 RMS(Int)=  0.74719985 XScale=  1.02283602
+ RedQX1 iteration     2 Try  4 RMS(Cart)=  0.48342846 RMS(Int)=  0.82515303 XScale=  0.89534575
+ RedQX1 iteration     3 Try  1 RMS(Cart)=  0.19337138 RMS(Int)=  0.77258778 XScale=  0.97383537
+ RedQX1 iteration     4 Try  1 RMS(Cart)=  0.03867428 RMS(Int)=  0.75154325 XScale=  1.01361212
+ RedQX1 iteration     4 Try  2 RMS(Cart)=  0.04080278 RMS(Int)=  0.75648042 XScale=  1.00363652
+ RedQX1 iteration     4 Try  3 RMS(Cart)=  0.04315649 RMS(Int)=  0.76210464 XScale=  0.99282637
+ RedQX1 iteration     5 Try  1 RMS(Cart)=  0.03970397 RMS(Int)=  0.76163781 XScale=  0.99370404
+ RedQX1 iteration     6 Try  1 RMS(Cart)=  0.00794079 RMS(Int)=  0.75748075 XScale=  1.00167438
+ RedQX1 iteration     6 Try  2 RMS(Cart)=  0.00802556 RMS(Int)=  0.75850611 XScale=  0.99968197
+ RedQX1 iteration     6 Try  3 RMS(Cart)=  0.00811199 RMS(Int)=  0.75955723 XScale=  0.99765869
+ RedQX1 iteration     7 Try  1 RMS(Cart)=  0.00798220 RMS(Int)=  0.75954029 XScale=  0.99769117
+ RedQX1 iteration     8 Try  1 RMS(Cart)=  0.00159644 RMS(Int)=  0.75871169 XScale=  0.99928480
+ RedQX1 iteration     8 Try  2 RMS(Cart)=  0.00159983 RMS(Int)=  0.75891827 XScale=  0.99888641
+ RedQX1 iteration     9 Try  1 RMS(Cart)=  0.00159727 RMS(Int)=  0.75891794 XScale=  0.99888705
+ RedQX1 iteration    10 Try  1 RMS(Cart)=  0.00031945 RMS(Int)=  0.75875289 XScale=  0.99920528
+ RedQX1 iteration    10 Try  2 RMS(Cart)=  0.00031959 RMS(Int)=  0.75879413 XScale=  0.99912573
+ RedQX1 iteration    10 Try  3 RMS(Cart)=  0.00031972 RMS(Int)=  0.75883541 XScale=  0.99904612
+ RedQX1 iteration    10 Try  4 RMS(Cart)=  0.00031986 RMS(Int)=  0.75887673 XScale=  0.99896646
+ RedQX1 iteration    11 Try  1 RMS(Cart)=  0.00031955 RMS(Int)=  0.75887669 XScale=  0.99896654
+ RedQX1 iteration    12 Try  1 RMS(Cart)=  0.00006391 RMS(Int)=  0.75884367 XScale=  0.99903020
+ RedQX1 iteration    12 Try  2 RMS(Cart)=  0.00006392 RMS(Int)=  0.75885192 XScale=  0.99901429
+ RedQX1 iteration    12 Try  3 RMS(Cart)=  0.00006392 RMS(Int)=  0.75886018 XScale=  0.99899837
+ RedQX1 iteration    13 Try  1 RMS(Cart)=  0.00006391 RMS(Int)=  0.75886018 XScale=  0.99899837
+ RedQX1 iteration    14 Try  1 RMS(Cart)=  0.00001278 RMS(Int)=  0.75885357 XScale=  0.99901110
+ RedQX1 iteration    14 Try  2 RMS(Cart)=  0.00001278 RMS(Int)=  0.75885522 XScale=  0.99900792
+ RedQX1 iteration    14 Try  3 RMS(Cart)=  0.00001278 RMS(Int)=  0.75885688 XScale=  0.99900474
+ RedQX1 iteration    14 Try  4 RMS(Cart)=  0.00001278 RMS(Int)=  0.75885853 XScale=  0.99900155
+ RedQX1 iteration    14 Try  5 RMS(Cart)=  0.00001278 RMS(Int)=  0.75886018 XScale=  0.99899837
+ RedQX1 iteration    15 Try  1 RMS(Cart)=  0.00001278 RMS(Int)=  0.75886018 XScale=  0.99899837
+ RedQX1 iteration    16 Try  1 RMS(Cart)=  0.00000256 RMS(Int)=  0.75885886 XScale=  0.99900092
+ RedQX1 iteration    16 Try  2 RMS(Cart)=  0.00000256 RMS(Int)=  0.75885919 XScale=  0.99900028
+ RedQX1 iteration    16 Try  3 RMS(Cart)=  0.00000256 RMS(Int)=  0.75885952 XScale=  0.99899965
+ RedQX1 iteration    17 Try  1 RMS(Cart)=  0.00000256 RMS(Int)=  0.75885952 XScale=  0.99899965
+ RedQX1 iteration    18 Try  1 RMS(Cart)=  0.00000051 RMS(Int)=  0.75885925 XScale=  0.99900015
+ RedQX1 iteration    18 Try  2 RMS(Cart)=  0.00000051 RMS(Int)=  0.75885932 XScale=  0.99900003
+ RedQX1 iteration    18 Try  3 RMS(Cart)=  0.00000051 RMS(Int)=  0.75885939 XScale=  0.99899990
+ RedQX1 iteration    19 Try  1 RMS(Cart)=  0.00000051 RMS(Int)=  0.75885939 XScale=  0.99899990
+ RedQX1 iteration    20 Try  1 RMS(Cart)=  0.00000010 RMS(Int)=  0.75885933 XScale=  0.99900000
+ RedQX1 iteration    20 Try  2 RMS(Cart)=  0.00000010 RMS(Int)=  0.75885935 XScale=  0.99899998
+ Old curvilinear step not converged, using linear step:
+ SCX= 8.09D+00 DXMaxT= 4.94-324 SCLim= 0.00D+00 Fact= 0.00D+00
+ RedCar/ORedCr failed for GTrans.
+ Error termination via Lnk1e in /home1/apps/gaussian/16rA.03/g16/l101.exe at Sat Oct 22 00:25:20 2022.
+ Job cpu time:       0 days  0 hours  0 minutes 14.4 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.6 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
