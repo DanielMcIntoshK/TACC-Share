@@ -182,5 +182,6 @@ void Molecule::addAtom(std::string atomName, std::vector<double> dir, double rad
 	for(int i =0; i < insertPos; i++){atPos++;}
 	atoms.insert(atPos,atomName);
 	molecule.insertRow(insertPos, dir);
+	atomCount++;
 }
 

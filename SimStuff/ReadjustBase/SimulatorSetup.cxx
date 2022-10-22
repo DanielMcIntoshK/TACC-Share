@@ -34,6 +34,8 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 	firstLine=firstLine.substr(spacePos+1);
 	std::string ProdName=firstLine;
 
+	std::cout << "RN: " << ReactName << std::endl << "PN: " << ProdName << std::endl;
+
 	molecules.resize(simCount);
 
 	for(int i = 0; i < simCount; i++){
@@ -42,7 +44,7 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 
 		molecules[i][1].loadMolecule(ProdName);
 		molecules[i][1].adjust(0,-2,3);
-
+		
 		std::string inputLine;
 		std::getline(inFile, inputLine);
 		
@@ -55,7 +57,7 @@ int SimulatorSetup::loadMolecules(std::string setupFile){
 		if(values.size()!=10){
 			std::cout << i << ": INVALID SIM\n";
 		}
-
+		
 		molecules[i][0].addAtom("Br", {values[0],values[1],values[2]}, values[3],4);
 		molecules[i][1].addStructure("benzo.xyz", {values[4],values[5],values[6]},values[7],Pi*values[8],Pi*values[9]+Pi/2,molecules[i][1].getCount());
 	}
