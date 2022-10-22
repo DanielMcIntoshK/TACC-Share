@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -J MN_TRANS_SEARCH_sim1
+#SBATCH -o output.%j
+#SBATCH -e error.%j
+#SBATCH -N 1 -n 1
+#SBATCH -p normal
+#SBATCH -t 42:00:00
+
+module load gaussian
+
+g16 < sim1.config > sim1_output.log

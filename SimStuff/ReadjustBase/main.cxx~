@@ -16,7 +16,7 @@ int main(int argc, char** argv){
 	
 	SimulatorSetup ss;
 	ss.loadMolecules("../SimTest.dsmt");
-	//ss.createSimulations("../testFold/sim#");
+	ss.createSimulations("../testFold/sim#");
 
 	return 0;
 }

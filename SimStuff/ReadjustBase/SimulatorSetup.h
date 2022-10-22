@@ -11,12 +11,13 @@ class SimulatorSetup{
 	public:
 	SimulatorSetup();
 	
-	void loadMolecules(std::string setupFile);
-	void createSimulations(std::string folderBase);
+	int loadMolecules(std::string setupFile);
+	void createSimulations();
 	
 	void outputBasisSetInfo(std::ofstream & outFile);
 	private:
 	int simCount;
+	std::string folderBase;
 	std::vector<std::array<Molecule,2>> molecules;
 };
 
