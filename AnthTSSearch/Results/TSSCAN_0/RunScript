@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -J ANTHRACENE_TS_0
+#SBATCH -o output.%j
+#SBATCH -e error.%j
+#SBATCH -N 1 -n 1
+#SBATCH -p normal
+#SBATCH -t 45:00:00
+#SBATCH -A DFT-and-EPR-Simulati
+
+module load gaussian
+
+g16 < AnthTS_0.config
